@@ -37,13 +37,13 @@ class infosForm extends Component {
         <input type="text" name="mayorname" value={name} onChange={this.handleChange} />
         <label for="habitantsNumber">habitantsNumber</label>
         <input type="number" name="habitantsNumber" value={habitantsNumber} onChange={this.handleChange} />
-        <label for="area">area/label>
+        <label for="area">area</label>
         <input type="number" name="area" value={price} onChange={this.handleChange} />
         <input type="text" name="tramlines" value={0} />
-        <input type="send" />
-      </form>
+        <input type="send" /> </form>
+     
     );
   }
 }
 
-export default ProductForm;
+export default infosForm;
