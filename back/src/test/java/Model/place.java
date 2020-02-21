@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package Model;
 
 import java.util.Set;
 
@@ -11,7 +11,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 @Entity
 @Table(name = "mayor_name")
 @EntityListeners(AuditingEntityListener.class)
-public class Mayor_name {
+public class place {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -32,3 +32,5 @@ public class Mayor_name {
 
     @Column(name = "External_link", nullable = false)
     private String External_link;
+
+}  

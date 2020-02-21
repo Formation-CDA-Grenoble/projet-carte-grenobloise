@@ -54,7 +54,25 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-	</dependencies>
+	
+   <dependency>
+     <groupId>org.jbundle.util.calendarpanel</groupId>
+     <artifactId>org.jbundle.util.calendarpanel</artifactId>
+     <version>1.1.6</version>
+   </dependency>
+ 
+   <dependency>
+     <groupId>io.data2viz</groupId>
+     <artifactId>d2v-core-jvm</artifactId>
+     <version>0.7.1-RC3</version>
+   </dependency>
+ 
+   <dependency>
+     <groupId>com.mantledillusion.vaadin</groupId>
+     <artifactId>cotton</artifactId>
+     <version>2.0.0.ALPHA17</version>
+   </dependency>
+ </dependencies>
 
 	<build>
 		<plugins>

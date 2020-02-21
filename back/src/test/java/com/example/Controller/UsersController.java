@@ -1,16 +1,12 @@
-package com.example.demo.controller;
+package com.example.Controller;
 
 import java.util.List;
 
-import javax.validation.Valid;
-
-import com.example.demo.model.habitants_number;
-import com.example.demo.repository.habitants_numberRepository;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 
 // Ce contrôleur fonctionne sur le modèle d'une API REST
@@ -19,7 +15,7 @@ import org.springframework.web.server.ResponseStatusException;
 @RequestMapping("/api/habitants_number")
 // Ce contrôleur accepte les requêtes venant d'un serveur différent
 @CrossOrigin
-public class habitants_numberController {
+public class UsersController {
 
     // Injection de dépendance
     // Une instance de ProductRepository est automatiquement créée
@@ -32,3 +28,5 @@ public class habitants_numberController {
     public List<habitants_number> getAllhabitants_number() {
         return habitants_numberRepository.findAll();
     }
+
+}
